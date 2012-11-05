@@ -218,7 +218,7 @@ hr{
 .A, .B, .C, .D, .E {
 	padding-bottom:22px;
 }
-.D {
+.D, .E {
 	padding-bottom: 40px;
 }
 .prevPane, .nextPane, .submit-button{
@@ -243,9 +243,9 @@ hr{
 	bottom:15px;
 	right:24px;
 }
-.D .submit-button {
-	bottom:15px;
-	right:13px;
+.D .nextPane {
+	bottom: 15px;
+	right: 13px;
 }
 .B .prevPane {
 	bottom:21px;
@@ -258,6 +258,14 @@ hr{
 .D .prevPane {
 	bottom:15px;
 	left:13px;
+}
+.E .prevPane {
+	bottom:15px;
+	left:24px;
+}
+.E .submit-button {
+	bottom:15px;
+	right:24px;
 }
 .table-radio {
 	display:inline-block;
@@ -548,22 +556,20 @@ fieldset hr{
 
 
 /* E */
-#formMain.E{
-	width: 640px;
-	color: white;
+#formfields.E {
+	width: 200px;
+	margin-left: 200px;
 }
 
-#formMain.E p{
-	color: white;
+#formfields.E dl {
+	border-bottom: thin solid white;
 }
 
-#formMain.E h1{
-	color: white;
-	font-size: 30px;
+#formfields.E dd {
+	float: right;
 }
-
-#formfields.E{
-	width: 500px;
+#formfields.E label {
+	color: #001740;
 }
 
 .list{
@@ -681,28 +687,6 @@ fieldset hr{
 #formMain.E h1 {
 	color:#fff;
 	font-size:30px
-}
-
-#formfields.E {
-	width:580px;
-	margin-left:30px;
-	float:none
-}
-
-#formfields.E p {
-	width:580px;
-	margin-left:0;
-	font-weight:400;
-	color:#001740;
-	font-size:13px
-}
-
-#formfields.E h2 {
-	text-align:center;
-	font-size:20px;
-	width:580px;
-	height:46px;
-	float:none
 }
 
 #results {

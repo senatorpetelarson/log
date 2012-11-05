@@ -419,6 +419,55 @@
 				</table>
 					</fieldset>
 				</div> <!-- end of form fields -->
+				<div class="nextPane">
+					<a href="#"><img src="resources/img/next.jpg" /></a>
+				</div>
+				<div class="prevPane clear">
+					<a href="#"><img src="resources/img/back.jpg" /></a>
+				</div>
+			</div></div>
+
+			<!-- E -->
+			<div class="question-wrapper"><div id="formMain" class="E center-text center-marg form-question">
+				<div id="progressBar">
+					<img src="resources/img/progress_4.png" />
+				</div>
+				<h4 class="spacer-top-10">VISIBILITY &amp; DETECTION</h4>	
+				<div class="rule"></div>
+				<p class="spacer-top-20" style="font-size:15px;margin-left:45px;margin-right:45px;">Please describe the probability that your organization is currently breached:</p>
+				<div id="formfields" class="E spacer-top-30">
+					<fieldset>
+						<dl>
+							<dt><label for="comply-with-regulations">Definitely</label></dt>
+							<dd>
+								<input name="primary-driver" value="definitely" type="radio" id="organization-breached-definitely" />
+								<label for="organization-breached-definitely"></label>
+							</dd>
+						</dl>
+						
+						<dl>
+							<dt><label for="executivelevel-initiative">Likely</label></dt>
+							<dd>
+								<input name="primary-driver" value="likely" type="radio" id="organization-breached-likely" />
+								<label for="organization-breached-likely"></label>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label for="protect-customer-data">Unlikely Not</label></dt>
+							<dd>
+								<input name="primary-driver" value="unlikely-not" type="radio" id="organization-breached-unlikely-not" />
+								<label for="organization-breached-unlikely-not"></label>
+							</dd>
+						</dl>
+						<dl>
+							<dt><label for="protect-your-network">Definitely Not</label></dt>
+							<dd>
+								<input name="primary-driver" value="definitely-not" type="radio" id="organization-breached-definitely-not" />
+								<label for="organization-breached-definitely-not"></label>
+							</dd>
+						</dl>
+					</fieldset>
+				</div> <!-- end of form fields -->
 				<div class="submit-button">
 					<a href="#"><img src="resources/img/next.jpg" /></a>
 				</div>
@@ -426,6 +475,7 @@
 					<a href="#"><img src="resources/img/back.jpg" /></a>
 				</div>
 			</div></div>
+
 			<input type="hidden" id="rating_information_security_tools" name="rating_information_security_tools" value=""/>
 			<input type="hidden" id="rating_prevention_response" name="rating_prevention_response" value=""/>
 			<input type="hidden" id="rating_detection" name="rating_detection" value=""/>
