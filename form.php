@@ -295,8 +295,8 @@
 					</tr>
 					<tr>
 						<td valign="middle" align="left" class="label-column"><label for="behavioral-modeling-of-your-most-critical-assets">Behavioral modeling of your most critical assets</label></td>
-						<td valign="middle" align="center"><input value="20" class="high" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-sufficient" /></td>
-						<td valign="middle" align="center"><input value="10" class="midC med" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-needs-improvement" /></td>
+						<td valign="middle" align="center"><input value="30" class="high" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-sufficient" /></td>
+						<td valign="middle" align="center"><input value="15" class="midC med" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" class="low" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-insufficient" /></td>
 					</tr>
 					<tr>
@@ -325,8 +325,8 @@
 					</tr>
 					<tr>
 						<td valign="middle" align="left" class="label-column"><label for="use-of-ipdomain-reputation-lists">Use of external context/information (threat intelligence data IP reputation, geolocation, etc.)</label></td>
-						<td valign="middle" align="center"><input value="20" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-sufficient" /></td>
-						<td valign="middle" align="center"><input value="10" class="midC" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-needs-improvement" /></td>
+						<td valign="middle" align="center"><input value="30" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-sufficient" /></td>
+						<td valign="middle" align="center"><input value="15" class="midC" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-insufficient" /></td>
 					</tr>
 				</table>
