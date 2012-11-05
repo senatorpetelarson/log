@@ -89,6 +89,8 @@
 							<option>Technology</option>
 							<option>Communications</option>
 							<option>Transportation</option>
+							<option>Energy</option>
+							<option>Utilities</option>
 							<option>Other</option>
 						</select>
 					</fieldset>
@@ -275,9 +277,9 @@
 					<table width="790" cellspacing="1" cellpadding="2">
 					<tr>
 						<th class="label-column">Rate Your Organization's…</th>
-						<th align="center">Sufficient</th>
+						<th align="center">Strong</th>
 						<th align="center">Needs Improvement</th>
-						<th align="center">Insufficient</th>
+						<th align="center">Weak</th>
 					</tr>
 					<tr>
 						<td valign="middle" width="390" align="left" class="label-column"><label for="continuous-monitoring-of-the-most-likely-targets-of-an-attack-in">Continuous monitoring of the most<br>likely targets of an attack in your network</label></td>
@@ -304,25 +306,25 @@
 						<td valign="middle" align="center"><input value="0" class="low" name="independent-monitoring-of-critical-data-files-and-file-systems" type="radio" id="independent-monitoring-of-critical-data-files-and-file-systems-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="collecting-centralizing-and-analyzing-log-data">Collecting, centralizing &amp; analyzing log data</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="collecting-centralizing-and-analyzing-log-data">Process of security system updates (anti-virus/IDS/NGFW signature updates, etc.)</label></td>
 						<td valign="middle" align="center"><input value="30" name="collecting-centralizing-and-analyzing-log-data" type="radio" id="collecting-centralizing-and-analyzing-log-data-sufficient" /></td>
 						<td valign="middle" align="center"><input value="15" class="midC" name="collecting-centralizing-and-analyzing-log-data" type="radio" id="collecting-centralizing-and-analyzing-log-data-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="collecting-centralizing-and-analyzing-log-data" type="radio" id="collecting-centralizing-and-analyzing-log-data-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="ongoing-patch-management-and-updating">Ongoing patch management &amp; updating of anti-virus (AV) signatures</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="ongoing-patch-management-and-updating">Patch management</label></td>
 						<td valign="middle" align="center"><input value="30" name="ongoing-patch-management-and-updating" type="radio" id="ongoing-patch-management-and-updating-sufficient" /></td>
 						<td valign="middle" align="center"><input value="15" class="midC" name="ongoing-patch-management-and-updating" type="radio" id="ongoing-patch-management-and-updating-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="ongoing-patch-management-and-updating" type="radio" id="ongoing-patch-management-and-updating-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="password-management-and-enforcement-across-all-systems">Password management &amp; enforcement across all systems</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="password-management-and-enforcement-across-all-systems">Use of Identity &amp; Access Management (IAM)</label></td>
 						<td valign="middle" align="center"><input value="30" name="password-management-and-enforcement-across-all-systems" type="radio" id="password-management-and-enforcement-across-all-systems-sufficient" /></td>
 						<td valign="middle" align="center"><input value="15" class="midC" name="password-management-and-enforcement-across-all-systems" type="radio" id="password-management-and-enforcement-across-all-systems-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="password-management-and-enforcement-across-all-systems" type="radio" id="password-management-and-enforcement-across-all-systems-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="use-of-ipdomain-reputation-lists">Use of IP/domain reputation lists</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="use-of-ipdomain-reputation-lists">Use of external context/information (threat intelligence data IP reputation, geolocation, etc.)</label></td>
 						<td valign="middle" align="center"><input value="20" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-sufficient" /></td>
 						<td valign="middle" align="center"><input value="10" class="midC" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-insufficient" /></td>
@@ -373,35 +375,35 @@
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-know-immediately-when-user-credentials-are-compromise" type="radio" id="ability-to-know-immediately-when-user-credentials-are-compromise-not-at-all-confident" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net">Ability to be alerted on anomalous activity on your internal network</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net">Ability to be alerted on anomalous network behavior</label></td>
 						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-confident" /></td>
 						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-not-at-all-confident" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="continuous-monitoring-of-privileged-user-activity">Continuous monitoring of privileged user activity</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="continuous-monitoring-of-privileged-user-activity">Ability to monitor privileged users on a continuous basis</label></td>
 						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="continuous-monitoring-of-privileged-user-activity" type="radio" id="continuous-monitoring-of-privileged-user-activity-confident" /></td>
 						<td valign="middle" align="center"><input value="15" class="d2c" name="continuous-monitoring-of-privileged-user-activity" type="radio" id="continuous-monitoring-of-privileged-user-activity-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="7.5" class="d3c" name="continuous-monitoring-of-privileged-user-activity" type="radio" id="continuous-monitoring-of-privileged-user-activity-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="continuous-monitoring-of-privileged-user-activity" type="radio" id="continuous-monitoring-of-privileged-user-activity-not-at-all-confident" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p">Ability to be alerted when an unauthorized process starts on a production server</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p">Ability to be alerted when an unauthorized process or service starts on a production server</label></td>
 						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-confident" /></td>
 						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-not-at-all-confident" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe">Ability to recognize that the same user logged in from two different geographic locations within a suspicious timeframe</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe">Ability to identify suspicious user behavior patterns</label></td>
 						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-confident" /></td>
 						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-not-at-all-confident" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-detect-reconnaissance-activity-followed-by-the-scanne">Ability to detect reconnaissance activity followed by the scanned host connecting to the attacker (originating IP)</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-detect-reconnaissance-activity-followed-by-the-scanne">Ability to identify an unauthorized or suspicious network connection</label></td>
 						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-detect-reconnaissance-activity-followed-by-the-scanne" type="radio" id="ability-to-detect-reconnaissance-activity-followed-by-the-scanne-confident" /></td>
 						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-detect-reconnaissance-activity-followed-by-the-scanne" type="radio" id="ability-to-detect-reconnaissance-activity-followed-by-the-scanne-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-detect-reconnaissance-activity-followed-by-the-scanne" type="radio" id="ability-to-detect-reconnaissance-activity-followed-by-the-scanne-not-very-confident" /></td>
