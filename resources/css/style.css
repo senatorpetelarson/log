@@ -168,6 +168,7 @@ h1.site-heading {
 	width: 600px;
 	margin: 0 auto;
 	padding-top: 210px;
+	position: relative;
 	margin-bottom:17px;
 	height:361px;
 }
@@ -183,12 +184,11 @@ h1.site-heading {
 }
 #content-wrapper {
 	width:100%;
-	background: url(../img/body_bg.jpg) repeat-x 0 -100px #b4cddd;
+	background: #FFF;
 	margin:0 auto;
 }
 #content-words {
 	width:100%;
-	background: url(../img/bg_words.png) no-repeat center 0px;
 	margin:0 auto;
 }
 #content-form{
@@ -287,6 +287,25 @@ hr{
 }
 
 /* start of individual settings */
+
+/* Index */
+.promotion {
+	background: url(../img/red-circle.png) no-repeat;
+	left: 410px;
+	padding: 32px 34px 17px 36px;
+	position: absolute;
+	top: 312px;
+	width: 200px;
+}
+#content-home .promotion p {
+	color: #D1070A;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.5em;
+	text-align: center;
+	width: 210px;
+}
+
 /* A */
 #formMain.A{
 	width: 640px;

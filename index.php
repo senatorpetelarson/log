@@ -85,6 +85,10 @@ $(document).ready(function() {
 		<div class="center-text spacer-top-20" style="margin-top:20px;margin-bottom:20px;"> 
 			<a href="form.php"><img src="resources/img/getStarted.jpg" /></a>
 		</div>
+
+		<div class="promotion">
+			<p>You could win a FULL CONFERENCE PASS to RSA 2013! <br />a &#36;1,595 value</p>
+		</div>
 	</div></div></div>
 
 	<!-- content end -->
