@@ -172,6 +172,10 @@ h1.site-heading {
 	margin-bottom:17px;
 	height:361px;
 }
+#terms #content-home {
+	height: auto;
+	padding: 100px 0 20px;
+}
 #content-home p {
 	width: 600px;
 }
@@ -312,6 +316,18 @@ hr{
 	line-height: 1.5em;
 	text-align: center;
 	width: 210px;
+}
+
+.terms {
+	bottom: 5px;
+	position: absolute;
+	right: -80px;
+	text-align: right;
+}
+
+.terms a {
+	color: blue;
+	font-size: 13px;
 }
 
 /* A */

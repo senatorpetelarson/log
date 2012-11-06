@@ -87,7 +87,10 @@ $(document).ready(function() {
 		</div>
 
 		<div class="promotion">
-			<p>You could win a FULL CONFERENCE PASS to RSA 2013! <br />a &#36;1,595 value</p>
+			<p>You could win a FULL CONFERENCE PASS to RSA 2013! <br />a &#36;1,595 value*</p>
+		</div>
+		<div class="terms">
+			<p><a href="terms.html" target="_blank">*view contest terms and conditions</a></p>
 		</div>
 	</div></div></div>
 
