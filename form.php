@@ -427,20 +427,20 @@
 				</div>
 			</div></div>
 
-			<!-- E -->
-			<div class="question-wrapper"><div id="formMain" class="E center-text center-marg form-question">
+			<!-- F -->
+			<div class="question-wrapper"><div id="formMain" class="F center-text center-marg form-question">
 				<div id="progressBar">
-					<img src="resources/img/progress_4.png" />
+					<img src="resources/img/progress_5.png" />
 				</div>
 				<h4 class="spacer-top-10">VISIBILITY &amp; DETECTION</h4>	
 				<div class="rule"></div>
 				<p class="spacer-top-20" style="font-size:15px;margin-left:45px;margin-right:45px;">Please describe the probability that your organization is currently breached:</p>
-				<div id="formfields" class="E spacer-top-30">
+				<div id="formfields" class="F spacer-top-30">
 					<fieldset>
 						<dl>
 							<dt><label for="comply-with-regulations">Definitely</label></dt>
 							<dd>
-								<input name="primary-driver" value="definitely" type="radio" id="organization-breached-definitely" />
+								<input name="primary-driver" value="15" type="radio" id="organization-breached-definitely" />
 								<label for="organization-breached-definitely"></label>
 							</dd>
 						</dl>
@@ -448,21 +448,21 @@
 						<dl>
 							<dt><label for="executivelevel-initiative">Likely</label></dt>
 							<dd>
-								<input name="primary-driver" value="likely" type="radio" id="organization-breached-likely" />
+								<input name="primary-driver" value="10" type="radio" id="organization-breached-likely" />
 								<label for="organization-breached-likely"></label>
 							</dd>
 						</dl>
 						<dl>
 							<dt><label for="protect-customer-data">Unlikely Not</label></dt>
 							<dd>
-								<input name="primary-driver" value="unlikely-not" type="radio" id="organization-breached-unlikely-not" />
+								<input name="primary-driver" value="5" type="radio" id="organization-breached-unlikely-not" />
 								<label for="organization-breached-unlikely-not"></label>
 							</dd>
 						</dl>
 						<dl>
 							<dt><label for="protect-your-network">Definitely Not</label></dt>
 							<dd>
-								<input name="primary-driver" value="definitely-not" type="radio" id="organization-breached-definitely-not" />
+								<input name="primary-driver" value="0" type="radio" id="organization-breached-definitely-not" />
 								<label for="organization-breached-definitely-not"></label>
 							</dd>
 						</dl>

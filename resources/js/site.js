@@ -24,7 +24,7 @@ function printResults() {
 }
 
 $(document).ready(function() {
-	pages = [$(".A"),$(".B"),$(".C"),$(".D")];
+	pages = [$(".A"),$(".B"),$(".C"),$(".D"),$(".E")];
 	$(".read-more-link").click(function(evt) {
 		evt.preventDefault();
 		$(this).hide();
@@ -65,6 +65,9 @@ $(document).ready(function() {
 		$("#rating_prevention_response").val(ratingValue);
 		ratingValue = 0;
 		$(".D input").each(function() {
+			if(this.checked) ratingValue = ratingValue + parseFloat($(this).val());
+		});
+		$(".F input").each(function() {
 			if(this.checked) ratingValue = ratingValue + parseFloat($(this).val());
 		});
 		$("#rating_detection").val(ratingValue);

@@ -1,6 +1,6 @@
 <?php
 require_once('classes/database.php');
-require_once('../db_conn.php');
+require_once('db_conn.php');
 $database = new database(CONST_HOST,CONST_USER,CONST_DB_PASSWORD,CONST_DB_NAME);
 $score = "";
 $rating_information_security_tools = $_POST['rating_information_security_tools'];
@@ -201,7 +201,7 @@ array_push($values,$_SERVER['REMOTE_ADDR']);if(count($_POST)>0) {
 					<?php endif ?>
 					</div>
 					<div class="spacer-top-10"></div>
-					<h2>Thank you for participating in our<br />Cyber Threat Readiness Quiz</h2>
+					<h2>Thank you for participating in the<br />Cyber Threat Readiness Quiz</h2>
 					<div class="spacer-top-10"></div>
 					<p>We hope you find this Cyber Threat Readiness Score insightful. The quiz will be available online for the next several weeks enabling your information security peers to assess their own cyber threat readiness. Once completed, the information collected will be aggregated and correlated, then published in a report that will enable you to see how your scores compare to those of your peers. </p>
 					</div>
@@ -212,9 +212,9 @@ array_push($values,$_SERVER['REMOTE_ADDR']);if(count($_POST)>0) {
 
 				<div id="quotes">
 					<img src="resources/img/scLogo.png" />
-					<p>“SIEMs are, in our view, the single most<br />important security tool in the security<br />practitioner’s arsenal.”<br />Peter Stephenson<br />Technology Editor, SC Magazine (May 2011)</p>
+					<p>&quot;One terrific product and an equally terrific value. We make it our Best Buy.&quot;<br /><br />Peter Stephenson<br />Technology Editor, SC Magazine (May 2011)</p>
 				</div>
-				<div id="links"><a href="http://www.logrhythm.com/Resources/RequestOnlineDemonstration.aspx" target="_blank"> Schedule a personalized demo</a> | <a href="http://logrhythm.com/Resources/InDepthProductDemoNoReg.aspx" target="_blank">Watch an in-depth demo</a> | <a href="http://www.logrhythm.com/Resources/RequestMoreInfo.aspx" target="_blank">Request more info</a></div>
+				<div id="links"><a href="http://www.logrhythm.com/Resources/RequestOnlineDemonstration.aspx" target="_blank"> Schedule a personalized demo</a> | <a href="http://logrhythm.com/Resources/InDepthProductDemoNoReg.aspx" target="_blank">Watch an in-depth demo</a> | <a href="http://www.logrhythm.com/Resources/RequestMoreInfo.aspx" target="_blank">Request more info</a> | <a href="terms.html" target="_blank">Terms and Conditions</a></div>
 			</div></div>
 	</div></div></div>
 	<!-- content end -->
