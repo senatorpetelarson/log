@@ -77,8 +77,6 @@ html {
 body {
 	font-family:Arial,arial,sans-serif;
 	margin: 0 auto;
-	background: #001740;
-	
 	min-width:950px;
 }
 
@@ -117,9 +115,10 @@ label {
 }
 
 #header{
- width: 100%;
- height: 100px;
- margin: 0 auto;
+	border-bottom: 3px solid #001740;
+	width: 100%;
+	height: 100px;
+	margin: 0 auto;
 }
 
 #logo{
@@ -170,7 +169,6 @@ h1.site-heading {
 	margin: 0 auto;
 	padding-top: 210px;
 	position: relative;
-	margin-bottom:17px;
 	height:361px;
 }
 #terms #content-home {
@@ -189,10 +187,11 @@ h1.site-heading {
 }
 #content-wrapper {
 	width:100%;
-	background: #FFF;
+	background: url(../img/body_bg.jpg) repeat-x 0 -100px #b4cddd;
 	margin:0 auto;
 }
 #content-words {
+	background: url(../img/bg_words.png) no-repeat center 0px;
 	width:100%;
 	margin:0 auto;
 }

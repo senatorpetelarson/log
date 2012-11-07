@@ -31,7 +31,7 @@
 	<!-- header -->
 	<div id="header" class="center-text">
 		<div id="logo" class="center-text">
-			<a href="http://www.logrhythm.com/" target="_blank"><img src="resources/img/logo.jpg" border="0" /></a>
+			<a href="http://www.logrhythm.com/" target="_blank"><img src="resources/img/logo-new.png" border="0" /></a>
 		</div>
 	</div>
 	<!-- header end -->
