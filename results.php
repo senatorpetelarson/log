@@ -6,9 +6,9 @@ $score = "";
 $rating_information_security_tools = $_POST['rating_information_security_tools'];
 $rating_information_security_tools_percent = round(($rating_information_security_tools/330)*100);
 $rating_prevention_response = $_POST['rating_prevention_response'];
-$rating_prevention_response_percent =  round(($rating_prevention_response/220)*100);
+$rating_prevention_response_percent =  round(($rating_prevention_response/240)*100);
 $rating_detection = $_POST['rating_detection'];
-$rating_detection_percent =  round(($rating_detection/200)*100);
+$rating_detection_percent =  round(($rating_detection/240)*100);
 $total_percent = round(($rating_information_security_tools_percent+$rating_prevention_response_percent+$rating_detection_percent)/3);
 if($rating_information_security_tools_percent>69) {
 	$score = $score."high-";	

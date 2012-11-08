@@ -187,11 +187,9 @@ h1.site-heading {
 }
 #content-wrapper {
 	width:100%;
-	background: url(../img/body_bg.jpg) repeat-x 0 -100px #b4cddd;
 	margin:0 auto;
 }
 #content-words {
-	background: url(../img/bg_words.png) no-repeat center 0px;
 	width:100%;
 	margin:0 auto;
 }

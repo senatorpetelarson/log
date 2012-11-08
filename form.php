@@ -376,9 +376,9 @@
 					</tr>
 					<tr>
 						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net">Ability to be alerted on anomalous network behavior</label></td>
-						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-confident" /></td>
-						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-somewhat-confident" /></td>
-						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-not-very-confident" /></td>
+						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-confident" /></td>
+						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-somewhat-confident" /></td>
+						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net" type="radio" id="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net-not-at-all-confident" /></td>
 					</tr>
 					<tr>
@@ -390,16 +390,16 @@
 					</tr>
 					<tr>
 						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p">Ability to be alerted when an unauthorized process or service starts on a production server</label></td>
-						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-confident" /></td>
-						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-somewhat-confident" /></td>
-						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-not-very-confident" /></td>
+						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-confident" /></td>
+						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-somewhat-confident" /></td>
+						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p" type="radio" id="ability-to-be-alerted-when-an-unauthorized-process-starts-on-a-p-not-at-all-confident" /></td>
 					</tr>
 					<tr>
 						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe">Ability to identify suspicious user behavior patterns</label></td>
-						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-confident" /></td>
-						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-somewhat-confident" /></td>
-						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-not-very-confident" /></td>
+						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-confident" /></td>
+						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-somewhat-confident" /></td>
+						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe" type="radio" id="ability-to-recognize-that-the-same-user-logged-in-from-two-diffe-not-at-all-confident" /></td>
 					</tr>
 					<tr>
@@ -411,9 +411,9 @@
 					</tr>
 					<tr>
 						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-know-when-activity-on-a-critical-host-departs-from-an">Ability to know when activity on a critical host departs from an established behavioral norm</label></td>
-						<td valign="middle" width="94" align="center"><input value="20" class="d1c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-confident" /></td>
-						<td valign="middle" align="center"><input value="10" class="d2c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-somewhat-confident" /></td>
-						<td valign="middle" align="center"><input value="5" class="d3c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-not-very-confident" /></td>
+						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-confident" /></td>
+						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-somewhat-confident" /></td>
+						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-not-at-all-confident" /></td>
 					</tr>
 				</table>
@@ -438,31 +438,31 @@
 				<div id="formfields" class="F spacer-top-30">
 					<fieldset>
 						<dl>
-							<dt><label for="comply-with-regulations">Definitely</label></dt>
+							<dt><label for="definitely">Definitely</label></dt>
 							<dd>
-								<input name="primary-driver" value="15" type="radio" id="organization-breached-definitely" />
+								<input name="primary-driver" value="definitely" type="radio" id="organization-breached-definitely" />
 								<label for="organization-breached-definitely"></label>
 							</dd>
 						</dl>
 						
 						<dl>
-							<dt><label for="executivelevel-initiative">Likely</label></dt>
+							<dt><label for="likely">Likely</label></dt>
 							<dd>
-								<input name="primary-driver" value="10" type="radio" id="organization-breached-likely" />
+								<input name="primary-driver" value="likely" type="radio" id="organization-breached-likely" />
 								<label for="organization-breached-likely"></label>
 							</dd>
 						</dl>
 						<dl>
-							<dt><label for="protect-customer-data">Unlikely Not</label></dt>
+							<dt><label for="unlikely-not">Unlikely Not</label></dt>
 							<dd>
-								<input name="primary-driver" value="5" type="radio" id="organization-breached-unlikely-not" />
+								<input name="primary-driver" value="unlikely-not" type="radio" id="organization-breached-unlikely-not" />
 								<label for="organization-breached-unlikely-not"></label>
 							</dd>
 						</dl>
 						<dl>
-							<dt><label for="protect-your-network">Definitely Not</label></dt>
+							<dt><label for="definitely-not">Definitely Not</label></dt>
 							<dd>
-								<input name="primary-driver" value="0" type="radio" id="organization-breached-definitely-not" />
+								<input name="primary-driver" value="definitely-not" type="radio" id="organization-breached-definitely-not" />
 								<label for="organization-breached-definitely-not"></label>
 							</dd>
 						</dl>
