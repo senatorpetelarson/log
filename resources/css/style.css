@@ -169,7 +169,6 @@ h1.site-heading {
 	margin: 0 auto;
 	padding-top: 210px;
 	position: relative;
-	height:361px;
 }
 #terms #content-home {
 	height: auto;
@@ -212,6 +211,82 @@ h1.site-heading {
 hr{
 	margin-bottom: 10px;
 	margin-top: 10px;
+}
+
+.contest-form {
+	background: url(../img/form_bg.jpg);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	height: 332px;
+	padding: 20px;
+	position: relative;
+}
+.contest-form h2 {
+	font-size: 22px;
+	margin: 0 0 18px;
+	text-align: center;
+}
+.contest-form p {
+	margin: 0 0 20px;
+}
+.contest-form p a {
+	color: blue;
+}
+.contest-form div {
+	display: inline-block;
+	width: 257px;
+	margin: 0 0 24px;
+}
+.contest-form .input-left {
+	margin: 0 40px 24px 0;
+}
+.contest-form  label, .contest-form input {
+	display: block;
+}
+.contest-form label {
+	font-size: 14px;
+	margin: 0 0 4px;
+}
+.contest-form input {
+	height: 18px;
+	margin: 0 0 10px;
+	padding: 0 2%;
+	width: 96%;
+}
+.form-button {
+	background: #D1070A;
+	padding: 6px 10px;
+}
+.form-button:hover {
+	text-decoration: none;
+}
+.contest-form-submit {
+	float: left;
+}
+.contest-form-skip {
+	float: right;
+}
+.error-message {
+	color: #D1070A;
+	display: none;
+	font-weight: bold;
+	left: 145px;
+	position: absolute;
+	top: 116px;
+}
+.error {
+	border: 2px solid #D1070A;
+}
+.terms {
+	bottom: 3px;
+	color: blue;
+	font-size: 12px;
+	position: absolute;
+	left: 20px;	
+}
+.terms:hover {
+	color: blue;
 }
 
 #progressBar{
@@ -314,18 +389,6 @@ hr{
 	line-height: 1.5em;
 	text-align: center;
 	width: 210px;
-}
-
-.terms {
-	bottom: 5px;
-	position: absolute;
-	right: -80px;
-	text-align: right;
-}
-
-.terms a {
-	color: blue;
-	font-size: 13px;
 }
 
 /* A */
@@ -892,4 +955,53 @@ fieldset table .label-column {
 .question-wrapper h4 {
 	font-size:20px;
 	font-weight:bold;
+}
+
+/** Final Form **/
+.email-form-wrapper {
+	width: 320px;
+}
+
+.email-form-wrapper h2 {
+	text-align: center;
+	font-size: 18px;
+	margin: 0 0 20px;
+}
+.email-form-wrapper img {
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.email-form-wrapper label {
+	clear: right;
+	display: block;
+	float: left;
+	margin: 0;
+}
+.email-form-wrapper input, .email-form-wrapper select {
+	display: inline;
+	margin: 0 0 16px;
+	float: right;
+	width: 180px
+}
+.email-form-wrapper select {
+	width: 184px;
+}
+
+.email-form-submit {
+	display: block;
+	clear: both;
+	width: 52px;
+	margin: 0 auto;
+}
+
+.email-form-wrapper p {
+	margin: 0 0 20px;
+}
+
+.email-form-wrapper .error-message {
+	text-align: center;
+	position: static;
+	margin: 10px 0 0;
 }
