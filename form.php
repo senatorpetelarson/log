@@ -1,3 +1,50 @@
+<?php
+session_start();
+$_SESSION['contest_entered'] = false;
+require_once('classes/database.php');
+require_once('../db_conn.php');
+	if($_POST && count($_POST) > 0) {
+		$database = new database(CONST_HOST,CONST_USER,CONST_DB_PASSWORD,CONST_DB_NAME);
+		if($_POST['contest-first-name']) {
+			$first_name = $_POST['contest-first-name'];
+		}
+		if($_POST['contest-last-name']) {
+			$last_name = $_POST['contest-last-name'];
+		}
+		if($_POST['contest-email']) {
+			$email = $_POST['contest-email'];
+		}
+		if($_POST['contest-company']) {
+			$company = $_POST['contest-company'];
+		}
+		if($_POST['contest-phone']) {
+			$phone = $_POST['contest-phone'];
+		}
+		if($_POST['contest-country']) {
+			$country = $_POST['contest-country'];
+		}
+		if($_POST['contest-state']) {
+			if($country == "United States of America") {
+				$state = $_POST['contest-state'];
+			} else {
+				$state = "";
+			}
+		}
+		$strQuery = "SELECT email FROM contest_entries WHERE email = $email";
+		$database->setQuery($strQuery);
+		$database->query();
+		$result = $database->getObjectList();
+		if(count($result) > 0) {
+			$contest_entry_error = 'You have already signed up for this contest';
+		} else {
+			$contest_entry_error = '';
+			$strQuery = "INSERT INTO contest_entries (first_name,last_name,email,company,phone,country,state) VALUES ('$first_name','$last_name','$email','$company','$phone','$country','$state');";
+			$database->setQuery($strQuery);
+			$database->query();
+		}
+		$_SESSION['contest_entered'] = true;
+	}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -35,15 +82,18 @@
 		</div>
 	</div>
 	<!-- header end -->
-	<h1 class="site-heading">Cyber Threat Readiness Quiz</h1>
+	<h1 class="site-heading">The 2nd Annual<br>Cyber Threat Readiness Quiz</h1>
 	<div class="heading-rule"></div>
 	
 	<!-- content -->
-	<div id="content-wrapper"><div id="content-words"><div id="content-form" class="center-text ">
+	<div id="content-wrapper"><div id="content-words">
+		<div id="content-form" class="center-text">
 		<form action="results.php" class="form-h2" name="quiz" method="post">
 			<!-- A -->
 			
-			<div class="question-wrapper"><div id="formMain" class="A center-text center-marg form-question">
+			<div class="question-wrapper">
+				<p style="font-size:12px;width:620px;margin:auto;margin-bottom:16px;text-align:left;">NOTE: candid answers will yield more accurate results. If the word &quot;you&quot; does not seem applicable to you, please answer the questions as they would apply to a member of your staff, and/or, pass this link along to someone in your organization better able to answer them.</p>
+				<div id="formMain" class="A center-text center-marg form-question">
 				<div id="progressBar">
 					<img src="resources/img/progress_1.png" />
 				</div>
@@ -294,7 +344,7 @@
 						<td valign="middle" align="center"><input value="0" class="low" name="incident-response-management" type="radio" id="incident-response-management-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="behavioral-modeling-of-your-most-critical-assets">Behavioral modeling of your most critical assets</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="behavioral-modeling-of-your-most-critical-assets">Ability to baseline host, network &amp; user behavior</label></td>
 						<td valign="middle" align="center"><input value="30" class="high" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-sufficient" /></td>
 						<td valign="middle" align="center"><input value="15" class="midC med" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" class="low" name="behavioral-modeling-of-your-most-critical-assets" type="radio" id="behavioral-modeling-of-your-most-critical-assets-insufficient" /></td>
@@ -306,7 +356,7 @@
 						<td valign="middle" align="center"><input value="0" class="low" name="independent-monitoring-of-critical-data-files-and-file-systems" type="radio" id="independent-monitoring-of-critical-data-files-and-file-systems-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="collecting-centralizing-and-analyzing-log-data">Process of security system updates (anti-virus/IDS/NGFW signature updates, etc.)</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="collecting-centralizing-and-analyzing-log-data">Defined process to implement security system updates (anti-virus/IDS/NGFW signature updates, etc.)</label></td>
 						<td valign="middle" align="center"><input value="30" name="collecting-centralizing-and-analyzing-log-data" type="radio" id="collecting-centralizing-and-analyzing-log-data-sufficient" /></td>
 						<td valign="middle" align="center"><input value="15" class="midC" name="collecting-centralizing-and-analyzing-log-data" type="radio" id="collecting-centralizing-and-analyzing-log-data-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="collecting-centralizing-and-analyzing-log-data" type="radio" id="collecting-centralizing-and-analyzing-log-data-insufficient" /></td>
@@ -324,7 +374,7 @@
 						<td valign="middle" align="center"><input value="0" name="password-management-and-enforcement-across-all-systems" type="radio" id="password-management-and-enforcement-across-all-systems-insufficient" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" align="left" class="label-column"><label for="use-of-ipdomain-reputation-lists">Use of external context/information (threat intelligence data IP reputation, geolocation, etc.)</label></td>
+						<td valign="middle" align="left" class="label-column"><label for="use-of-ipdomain-reputation-lists">Use of external context/information (threat intelligence data, IP reputation, geolocation, etc.)</label></td>
 						<td valign="middle" align="center"><input value="30" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-sufficient" /></td>
 						<td valign="middle" align="center"><input value="15" class="midC" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-needs-improvement" /></td>
 						<td valign="middle" align="center"><input value="0" name="use-of-ipdomain-reputation-lists" type="radio" id="use-of-ipdomain-reputation-lists-insufficient" /></td>
@@ -361,18 +411,25 @@
 						<th align="center">Not At All Confident</th>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-know-immediately-when-hosts-are-compromised">Ability to know IMMEDIATELY when hosts are compromised</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-know-immediately-when-hosts-are-compromised">Ability to know in near real-time when hosts are compromised</label></td>
 						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-know-immediately-when-hosts-are-compromised" type="radio" id="ability-to-know-immediately-when-hosts-are-compromised-confident" /></td>
 						<td valign="middle" align="center"><input class="d2c" value="15" name="ability-to-know-immediately-when-hosts-are-compromised" type="radio" id="ability-to-know-immediately-when-hosts-are-compromised-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-know-immediately-when-hosts-are-compromised" type="radio" id="ability-to-know-immediately-when-hosts-are-compromised-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-know-immediately-when-hosts-are-compromised" type="radio" id="ability-to-know-immediately-when-hosts-are-compromised-not-at-all-confident" /></td>
 					</tr>
 					<tr>
-						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-know-immediately-when-user-credentials-are-compromise">Ability to know IMMEDIATELY when user credentials are compromised</label></td>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-know-immediately-when-user-credentials-are-compromise">Ability to know in near real-time when user credentials are compromised</label></td>
 						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-know-immediately-when-user-credentials-are-compromise" type="radio" id="ability-to-know-immediately-when-user-credentials-are-compromise-confident" /></td>
 						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-know-immediately-when-user-credentials-are-compromise" type="radio" id="ability-to-know-immediately-when-user-credentials-are-compromise-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-know-immediately-when-user-credentials-are-compromise" type="radio" id="ability-to-know-immediately-when-user-credentials-are-compromise-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-know-immediately-when-user-credentials-are-compromise" type="radio" id="ability-to-know-immediately-when-user-credentials-are-compromise-not-at-all-confident" /></td>
+					</tr>
+					<tr>
+						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-understand-what-constitutes-normal-behavior-on-your-network">Ability to understand what constitutes normal behavior on your network</label></td>
+						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-understand-what-constitutes-normal-behavior-on-your-network" type="radio" id="ability-to-understand-what-constitutes-normal-behavior-on-your-network-1" /></td>
+						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-understand-what-constitutes-normal-behavior-on-your-network" type="radio" id="ability-to-understand-what-constitutes-normal-behavior-on-your-network-2" /></td>
+						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-understand-what-constitutes-normal-behavior-on-your-network" type="radio" id="ability-to-understand-what-constitutes-normal-behavior-on-your-network-3" /></td>
+						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-understand-what-constitutes-normal-behavior-on-your-network" type="radio" id="ability-to-understand-what-constitutes-normal-behavior-on-your-network-4" /></td>
 					</tr>
 					<tr>
 						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-be-alerted-on-anomalous-activity-on-your-internal-net">Ability to be alerted on anomalous network behavior</label></td>
@@ -409,13 +466,13 @@
 						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-detect-reconnaissance-activity-followed-by-the-scanne" type="radio" id="ability-to-detect-reconnaissance-activity-followed-by-the-scanne-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-detect-reconnaissance-activity-followed-by-the-scanne" type="radio" id="ability-to-detect-reconnaissance-activity-followed-by-the-scanne-not-at-all-confident" /></td>
 					</tr>
-					<tr>
+<!-- 					<tr>
 						<td valign="middle" width="291" align="left" class="label-column"><label for="ability-to-know-when-activity-on-a-critical-host-departs-from-an">Ability to know when activity on a critical host departs from an established behavioral norm</label></td>
 						<td valign="middle" width="94" align="center"><input value="30" class="d1c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-confident" /></td>
 						<td valign="middle" align="center"><input value="15" class="d2c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-somewhat-confident" /></td>
 						<td valign="middle" align="center"><input value="7.5" class="d3c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-not-very-confident" /></td>
 						<td valign="middle" align="center"><input value="0" class="d4c" name="ability-to-know-when-activity-on-a-critical-host-departs-from-an" type="radio" id="ability-to-know-when-activity-on-a-critical-host-departs-from-an-not-at-all-confident" /></td>
-					</tr>
+					</tr> -->
 				</table>
 					</fieldset>
 				</div> <!-- end of form fields -->
@@ -440,7 +497,7 @@
 						<dl>
 							<dt><label for="definitely">Definitely</label></dt>
 							<dd>
-								<input name="primary-driver" value="definitely" type="radio" id="organization-breached-definitely" />
+								<input name="probability_breached" value="definitely" type="radio" id="organization-breached-definitely" />
 								<label for="organization-breached-definitely"></label>
 							</dd>
 						</dl>
@@ -448,21 +505,21 @@
 						<dl>
 							<dt><label for="likely">Likely</label></dt>
 							<dd>
-								<input name="primary-driver" value="likely" type="radio" id="organization-breached-likely" />
+								<input name="probability_breached" value="likely" type="radio" id="organization-breached-likely" />
 								<label for="organization-breached-likely"></label>
 							</dd>
 						</dl>
 						<dl>
-							<dt><label for="unlikely-not">Unlikely Not</label></dt>
+							<dt><label for="unlikely">Unlikely</label></dt>
 							<dd>
-								<input name="primary-driver" value="unlikely-not" type="radio" id="organization-breached-unlikely-not" />
-								<label for="organization-breached-unlikely-not"></label>
+								<input name="probability_breached" value="unlikely" type="radio" id="organization-breached-unlikely" />
+								<label for="organization-breached-unlikely"></label>
 							</dd>
 						</dl>
 						<dl>
 							<dt><label for="definitely-not">Definitely Not</label></dt>
 							<dd>
-								<input name="primary-driver" value="definitely-not" type="radio" id="organization-breached-definitely-not" />
+								<input name="probability_breached" value="definitely-not" type="radio" id="organization-breached-definitely-not" />
 								<label for="organization-breached-definitely-not"></label>
 							</dd>
 						</dl>
@@ -484,16 +541,7 @@
 	<!-- content end -->
 	
 	<!-- footer -->
-		<div id="footer" >
-			<div id="footer-content" class="center-text spacer-top-10"> 
-				<a href="#"> <img src="resources/img/email.jpg" align="top"></a>
-				<a href="mailto:?body=I just took this Cyber Threat Readiness Quiz and thought you might be interested in getting your cyber security readiness score too. 
-	Go to http://MySecurityScore.com  to take the 3-minute quiz.">Forward this survey to a colleague</a>
-				&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacy.html" class="colorbox">Privacy Policy</a><br/>
-				<span class="small"><a href="http://logrhythm.com" target="_blank">Powered by LogRhythm</a>, a <a href="http://www.logrhythm.com/Products/LogandEventManagement/LogManagement.aspx" target="_blank">log management solution</a></span>&nbsp;&nbsp;
-				<span  class='st_twitter' ></span><span  class='st_facebook' ></span><span  class='st_linkedin' ></span>
-			</div>
-		</div>
+	<?php include('footer.php') ?>
 	<!-- footer end -->
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];

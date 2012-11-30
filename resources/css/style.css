@@ -145,7 +145,7 @@ h1.site-heading {
 	margin-left: -375px;
 	top: 140px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 40px;
 	font-weight:bold !important;
 }
 
@@ -155,19 +155,19 @@ h1.site-heading {
 	background: #001740;
 	position: absolute;
 	left: 50%;
-	top: 189px;
+	top: 221px;
 	margin-left: -375px;
 }
 #big-red-check {
 	position: absolute;
-	top: 178px;
+	top: 210px;
 	left: 50%;
 	margin-left: -83px;
 }
 #content-home{
 	width: 600px;
 	margin: 0 auto;
-	padding-top: 210px;
+	padding-top: 240px;
 	position: relative;
 }
 #terms #content-home {
@@ -196,7 +196,7 @@ h1.site-heading {
 	background:transparent;
 	width: 960px;
 	margin: 0 auto;
-	padding-top: 104px;
+	padding-top: 134px;
 	height:668px;
 	overflow:hidden;
 }
@@ -204,7 +204,7 @@ h1.site-heading {
 #content-results{
 	width: 960px;
 	margin: 0 auto;
-	padding-top: 104px;
+	padding-top: 144px;
 	padding-bottom:2px;
 }
 
@@ -228,7 +228,7 @@ hr{
 	text-align: center;
 }
 .contest-form p {
-	margin: 0 0 20px;
+	margin: 0 0 16px;
 }
 .contest-form p a {
 	color: blue;
@@ -254,15 +254,34 @@ hr{
 	padding: 0 2%;
 	width: 96%;
 }
-.form-button {
+.form-button, .results-button, .forward-to-friend-button {
 	background: #D1070A;
 	padding: 6px 10px;
 }
-.form-button:hover {
+.form-button:hover, .results-button:hover, .forward-to-friend-button:hover {
 	text-decoration: none;
 }
+.forward-to-friend-button {
+	display:block;
+	width:230px;
+	margin:auto;
+	text-align:center;
+	border: 0 solid #8b0203;
+	border-bottom-width:1px;
+	border-right-width:1px;
+}
+.results-button {
+	font-size:12px;
+	border: 0 solid #8b0203;
+	border-bottom-width:1px;
+	border-right-width:1px;
+}
 .contest-form-submit {
-	float: left;
+	display:block;
+	text-align: center;
+	width:260px;
+	font-size:12px;
+	float:left;
 }
 .contest-form-skip {
 	float: right;
@@ -874,14 +893,14 @@ fieldset hr{
 }
 
 #quotes {
-	width:340px;
+	width:400px;
 	height:100px;
-	margin-left:150px
+	margin:auto;
 }
 
 #quotes img {
-	width:70px;
-	height:70px;
+	margin-right: 10px;
+	margin-top:10px;
 	float:left
 }
 
@@ -898,7 +917,13 @@ fieldset hr{
 }
 
 #print img {
-	margin-top:20px
+	margin-top:0px
+}
+
+#email-button {
+	margin-top:2px;
+	float:right;
+	margin-right:11px;
 }
 
 #sendMesomething {
@@ -958,8 +983,16 @@ fieldset table .label-column {
 }
 
 /** Final Form **/
-.email-form-wrapper {
-	width: 320px;
+.email-form-wrapper, .email-results-wrapper {
+	width:350px;
+	height:425px;
+	padding-left:10px;
+	padding-top:10px;
+	padding-right:10px;
+}
+
+.email-form-wrapper .form-results {
+	display:none;
 }
 
 .email-form-wrapper h2 {
@@ -979,13 +1012,17 @@ fieldset table .label-column {
 	float: left;
 	margin: 0;
 }
+.email-results-wrapper label {
+	display: block;
+	float:none;
+}
 .email-form-wrapper input, .email-form-wrapper select {
 	display: inline;
 	margin: 0 0 16px;
 	float: right;
 	width: 180px
 }
-.email-form-wrapper select {
+.email-form-wrapper select, .email-results-wrapper select {
 	width: 184px;
 }
 
@@ -1000,8 +1037,8 @@ fieldset table .label-column {
 	margin: 0 0 20px;
 }
 
-.email-form-wrapper .error-message {
+.email-form-wrapper .error-message, .email-results-wrapper .error-message {
 	text-align: center;
-	position: static;
-	margin: 10px 0 0;
+	/*position: static;
+	margin: 10px 0 0;*/
 }

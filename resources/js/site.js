@@ -52,6 +52,7 @@ $(document).ready(function() {
 	$(".form-h2").jqTransform();
 	$(".colorbox").colorbox();
 	$(".submit-button").click(function(evt) {
+		evt.preventDefault();
 		if(validatePage(pages[currentQuestionIndex])) {
 			var ratingValue = 0;
 		$(".B input").each(function() {
@@ -67,10 +68,11 @@ $(document).ready(function() {
 		$(".D input").each(function() {
 			if(this.checked) ratingValue = ratingValue + parseFloat($(this).val());
 		});
-		$(".F input").each(function() {
-			if(this.checked) ratingValue = ratingValue + parseFloat($(this).val());
-		});
 		$("#rating_detection").val(ratingValue);
+		// $(".F input").each(function() {
+		// 	if(this.checked) ratingValue = ratingValue + parseFloat($(this).val());
+		// });
+		
 		$(".form-h2").get(0).submit();
 		} else {
 			alert("Please fill out all fields before moving on.");
