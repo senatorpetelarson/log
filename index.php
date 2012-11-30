@@ -61,7 +61,7 @@ ob_implicit_flush(0);
 	<!-- content -->
 
 	<div id="content-wrapper"><div id="content-words"><div id="content-home">
-		<h2 class="center-text" style="padding-top: 14px;" >TAKE THIS 3-MINUTE QUIZ TO FIND OUT YOUR<br>CYBER THREAT READINESS SCORE AND GET A CHANCE<br>TO WIN A FULL CONFERENCE PASS TO RSA 2013!</h2>
+		<h2 class="center-text" style="padding-top: 14px;" >TEST: TAKE THIS 3-MINUTE QUIZ TO FIND OUT YOUR<br>CYBER THREAT READINESS SCORE AND GET A CHANCE<br>TO WIN A FULL CONFERENCE PASS TO RSA 2013!</h2>
 		<p class="spacer-top-20" style="margin-top:20px;">The following questions are designed to assess your organization’s general readiness to defend against, detect and respond to advanced cyber threats. Questions focus on three categories critical to everyone's cyber threat preparedness:</p>
 		<div class="list spacer-top-20" style="margin-top:20px;">
 			<div class="list-item spacer-top-20">
